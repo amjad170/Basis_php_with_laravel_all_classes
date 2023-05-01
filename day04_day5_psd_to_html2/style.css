@@ -1,0 +1,546 @@
+/* nav part*/
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.video h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+
+.container{
+    padding: 10px 10%;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(62, 59, 59, 0.425);
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+   
+}
+
+nav .menu ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu ul li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px 15px;
+    display: inline-block;
+}
+
+/* header part */
+.red-color{
+    color: #fe320a;
+}
+
+header{
+    background: url("images/header.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+header::before{
+    content:"";
+    clear: both;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+h1{
+    font-size: 45px;
+}
+
+button{
+    background-color:#fe320a;
+    border: none;
+    padding: 12px 30px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* about part */
+.header{
+    text-align: center;
+    /* background-color: aqua; */
+}
+.header hr{
+    border: none;
+    height: 2px;
+    background: #fe320a;
+    width: 10%;
+}
+.header h2{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    position: relative;
+}
+.header h2::after{
+   content: "";
+   clear: both;
+   display: block;
+
+   height: 13px;
+   width: 13px;
+   border-radius: 50%;
+   background: #fe320a;
+   position: absolute;
+   left: 50%;
+   bottom: -15px;
+   transform: translate(-50%,0);
+}
+
+.about{
+    display: flex;
+}
+
+.about .pic{
+    width: 25%;
+    margin-right: 2%;
+    position: relative;
+}
+.about .pic img{
+    width: 100%;
+   
+}
+.about .text{
+    width: 70%;
+}
+.about .pic .social{
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+.about .pic .social h3{
+    margin: 10px 0;
+
+}
+.about .pic .social ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.about .pic .social ul li a{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 5px;
+    display: inline-block;
+    padding: 8px 9px;
+    border-radius: 50%;
+    transition: .7s;
+}
+.about .pic .social{
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    right: 0;
+}
+.about .pic .social ul li a:hover{
+    background: white;
+    color: black;
+}
+
+.video{
+    background: url(images/video.png);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.video::before{
+    content:"";
+    clear: both;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.video a{
+    font-size: 25px;
+    color: white;
+    border: 3px solid white;
+    padding: 15px 20px;
+    border-radius: 20%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.service .row{
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.service .row .col a{
+    font-size: 40px;
+}
+
+.skill{
+    background-color: #f3f3f3;
+}
+
+.skill .row{
+    display: flex;
+}
+.skill .row .col{
+    width: 48%;
+    margin: 1%;
+}
+.skill .row .col .pro .out{
+    height: 16px;
+   border-radius: 8px;
+   background: rgba(0, 0, 0, 0.8);
+   position: relative;
+   text-align: right;
+   color: white;
+   font-size: 13px;
+}
+.skill .row .col .pro .out .in{
+   height: 8px;
+   border-radius: 4px;
+   background: rgba(252, 0, 0, 0.8);
+   position: absolute;
+   top: 50%;
+   transform: translate(0,-50%);
+}
+
+.skill .row .col .pro{
+    margin: 20px 0;
+}
+
+.skill .row .col .pro .out .in1{
+    width: 60%;
+ }
+.skill .row .col .pro .out .in2{
+    width: 70%;
+ }
+.skill .row .col .pro .out .in3{
+    width: 80%;
+ }
+
+ /* .client img{
+    width: 100%;
+ } */
+
+ .client{
+    background: url(images/client.png);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.client::before{
+    content:"";
+    clear: both;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.client a{
+    font-size: 25px;
+    color: white;
+    border: 3px solid white;
+    padding: 10px 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.portfolio .menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.portfolio .menu{
+   margin: 30px 0;
+}
+.portfolio .menu ul a{
+   color: black;
+   margin: 0 10px;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+
+.portfolio .row{
+    display: flex;
+}
+.portfolio .row .col{
+    width: 31.33%;
+    margin: 1%;
+}
+.portfolio .row .col .pic{
+    position: relative;
+}
+.portfolio .row .col .pic img{
+    width: 100%;
+}
+.portfolio .row .col .over{
+    background: rgba(252, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+.portfolio .row .col .pic img:hover + .over{
+    display: flex;
+}
+
+.team{
+    background: #e1e1e1;
+}
+.team .row{
+    display: flex;
+}
+    
+.team .row .col{
+    width: 23%;
+    margin: 1%;
+}
+.team .row .col .pic{
+    position: relative;
+ }
+.team .row .col .pic img{
+    width: 100%;
+    border-bottom: 10px solid rgba(255, 0, 0, 0.8);
+ }
+.team .row .col .pic img:hover + .over{
+   display: block;
+ }
+
+.team .row .col .over{
+   background: rgba(252, 0, 0, 0.3);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 3px;
+   display: none;
+}
+.team .row .col .over .social{
+   background: rgba(255, 0, 0, 0.8);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   text-align: center;
+   color: white;
+   padding-bottom: 10px;
+
+}
+.team .row .col .over .social ul{
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+.team .row .col .over .social ul a{
+color: white;
+font-size: 20px;
+margin: 0 5px;
+}
+.team .row .col .over .social h3{
+margin: 10px 0;
+}
+
+ .sipon{
+    background: url(images/sipon_back.png);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.sipon::before{
+    content:"";
+    clear: both;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.blog .row{
+    display: flex;
+    margin-top: 50px;
+}
+.blog .row .col img{
+   width: 100%;
+   border-bottom: 8px solid rgba(0, 0, 0, 0.8);
+}
+.blog .row .col{
+    width: 31.33%;
+    margin: 1%;
+    box-shadow: 2px 2px 10px gray;
+}
+.blog .row .col .info{
+    padding: 15px;
+}
+.blog .row .col .info button{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.contact{
+    background: url(images/contact1.png);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 20px 25%;
+  
+}
+.contact::after{
+    content:"";
+    clear: both;
+    display: block;
+
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.contact form{
+    margin: 20px 0;
+}
+.contact input,textarea{
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px;
+    outline: none;
+}
+.contact input::placeholder,textarea::placeholder{
+   color: white;
+}
+
+.contact textarea{
+   width: 97%;
+   margin: 15px 0;
+}
+
+.contact .input{
+    display: flex;
+    justify-content: space-between;
+}
+.contact input{
+   width: 46%;
+}
+.contact button{
+   padding: 5px 5px;
+   border-radius: 5px;
+}
+
+
+
+/* ################################################## */
+.footer{
+    background: black;
+    height: 100px;
+    text-align: right;
+    position: relative;
+}
+.footer .social ul li a{
+    color: white;
+}
+.footer p{
+    color: white;
+}
+.footer .social ul li{
+    margin: 5px;
+}
+.footer .social ul{
+    display: flex;
+    list-style: none;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.footer .social{
+    position: absolute; 
+}
+
+.footer p{
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+
+
+
+
+
+ 

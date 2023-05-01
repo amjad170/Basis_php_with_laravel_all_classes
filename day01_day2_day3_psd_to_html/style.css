@@ -1,0 +1,107 @@
+body {
+    margin: 0px;}
+header,
+.my-work,
+.subscribe {
+    background: #23232e;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;}
+header img {
+    width: 6.5%;
+    margin-bottom: 60px;}
+h2 {
+    font-size: 50px;
+    text-transform: uppercase;}
+header p {
+    line-height: 25px;}
+header span {
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 8px 12px;
+    display: inline-block;
+    margin-top: 100px;}
+.container {
+    padding: 0 25%;}
+.what-i-do,
+.my-photography,
+.footer {
+    text-align: center;
+    color: #464b4f;
+    overflow: hidden;
+    background: url(images/img.png);
+    background-size: cover;}
+.what-i-do>p,
+.my-photography>p {
+    font-size: 25px;
+    line-height: 35px;}
+.row .col {
+    width: 31.3%;
+    margin: 1% 1%;
+    text-align: left;
+    float: left;}
+.my-work,
+.subscribe {
+    overflow: hidden;
+    text-align: center;}
+.row .col img {
+    width: 100%;}
+.my-work .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;}
+.my-work .menu {
+    margin-bottom: 20px;}
+.my-work .menu ul li {
+    display: inline-block;
+    margin: 0 15px;}
+.my-work .menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 3px;}
+.my-work .menu ul li a:hover {
+    border-bottom: 3px solid #7b77c9;
+}
+button {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 25px;
+    background-color: #7b77c9;
+    color: white;
+    margin: 50px 0;}
+input {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    margin-right: 5px;}
+.subscribe {
+    padding: 100px;}
+footer ul {
+    list-style: none;
+    padding: 0;
+    padding: 0;}
+footer ul li {
+    display: inline-block;}
+footer ul li a {
+    font-size: 25px;
+    padding: 0 10px;
+    color: #464b4f;}
+
+/* responsive */
+@media all and (max-width:810px){
+    header img {
+        width: 12%;
+       }
+    .container {
+        padding: 0 10%;}
+}
+
+@media all and (max-width:500px){
+    .row .col {
+        width: 96%;
+       }
+    .my-work .menu ul li {
+        display:block;
+    margin: 10px 0;}
+}
