@@ -1,3 +1,24 @@
+// Defferece way to ready jQuery syntex
+
+/* jQuery(document).ready(function(){  //system One
+
+});
+
+$(document).ready(function(){  //system Two
+
+});
+
+$(function(){  //system Three
+
+});
+
+$(function($){  //system Four
+
+}); */
+
+
+
+
 jQuery(document).ready(function() {
     
 jQuery(".FadeOut").click(function(){
