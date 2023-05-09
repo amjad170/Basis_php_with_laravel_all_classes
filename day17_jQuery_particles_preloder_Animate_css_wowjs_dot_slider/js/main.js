@@ -74,4 +74,8 @@ $('.multiple-items').slick({
   });
 
 
-  // particale js
+  // wow js   https://wowjs.uk/
+  $(document).ready(function(){
+    new WOW().init();
+})
+ 
