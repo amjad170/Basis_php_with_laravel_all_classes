@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.img{
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+}
+
+.your-class{
+    width: 95%;
+    margin: auto;
+  
+}
+
+
+/* scroll to top */
+
+.scroll-to-top{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    transition: .3s ease-in;
+    z-index: 100;
+    display: none;
+    cursor: pointer;
+}
+.scroll-to-top:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* particale js    https://vincentgarreau.com/particles.js/*/
+  
+#particles-js{
+    background-image: url("../image/header.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+  }
+
+  /* preloder */
+  .preloader {
+    position: fixed;
+    background-color: #777;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+.preloader ul {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preloader ul li {
+    background-color: #fff;
+    width: 4px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 6px;
+    animation: animate 1s infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform:scaleY(1);
+    }
+    25%{
+        transform:scaleY(1);
+    }
+    50%{
+        transform:scaleY(1);
+    }
+    75%{
+        transform:scaleY(1);
+    }
+    100%{
+        transform:scaleY(2);
+    }
+}
+
+.preloader ul li:nth-child(1) {
+   animation-delay: .1s;
+}
+.preloader ul li:nth-child(2) {
+   animation-delay: .2s;
+}
+.preloader ul li:nth-child(3) {
+   animation-delay: .3s;
+}
+.preloader ul li:nth-child(4) {
+   animation-delay: .4s;
+}
+.preloader ul li:nth-child(5) {
+   animation-delay: .5s;
+}
+
+
+/* preloader Image */
+.preloader img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* portfolio section  */
+.portfolio .row{
+    display: flex;
+}
+.portfolio .row .col{
+    width: 31.33%;
+    margin: 1%;
+}
+.portfolio .row .col .pic{
+    position: relative;
+}
+.portfolio .row .col .pic img{
+    width: 100%;
+}
+.portfolio .row .col .over{
+    background: rgba(252, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+.portfolio .row .col .pic img:hover + .over{
+    display: flex;
+}
+
+/* Team css */
+.team{
+    background: #e1e1e1;
+}
+.team .row{
+    display: flex;
+}
+    
+.team .row .col{
+    width: 23%;
+    margin: 1%;
+}
+.team .row .col .pic{
+    position: relative;
+ }
+.team .row .col .pic img{
+    width: 100%;
+    border-bottom: 10px solid rgba(255, 0, 0, 0.8);
+ }
+.team .row .col .pic img:hover + .over{
+   display: block;
+ }
+
+.team .row .col .over{
+   background: rgba(252, 0, 0, 0.3);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 3px;
+   display: none;
+}
+.team .row .col .over .social{
+   background: rgba(255, 0, 0, 0.8);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   text-align: center;
+   color: white;
+   padding-bottom: 10px;
+
+}
+.team .row .col .over .social ul{
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+.team .row .col .over .social ul a{
+color: white;
+font-size: 20px;
+margin: 0 5px;
+}
+.team .row .col .over .social h3{
+margin: 10px 0;
+}
