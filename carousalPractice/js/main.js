@@ -26,10 +26,6 @@
     new WOW().init(); 
     
 
-<<<<<<< HEAD
-    })
-    
-=======
 
 
     //slick Slider
@@ -84,7 +80,15 @@
 
 
     })
+
+// https://github.com/stevenwanderski/bxslider-4
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        default: 'Prev',
+        options: string
+      });
+      
+    });
     
 
->>>>>>> e92d6a0f0cd34e7205c23192afa9768e3eb13d71
    
