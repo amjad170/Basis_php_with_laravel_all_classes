@@ -5,3 +5,20 @@
 a{
     color:#506a85
 }
+
+.navchange{
+    padding-right: 40px;
+}
+.search{
+    margin-right: 50px;
+}
+.color{
+    color: #506a85;
+    font-weight: bold;
+
+}
+
+.title{
+    font-size: 70px;
+    font-weight: 500;
+}
